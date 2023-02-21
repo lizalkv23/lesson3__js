@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title> Lesson 3</title>
+</head>
+
+<body>
+   <main class="block">
+      <div class="block__container">
+         <div class="block__items block__items--0">
+<script>
+  //3.	Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+  //Вводим необходимые данные
+const minNumber = 1
+const maxNumber = 5
+let randomNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1 ) + minNumber)
+let userNumber = parseInt(prompt(`Введите ваше число. Диапазон от 1 до 5`, ''))
+  //Находим результат  
+if (randomNumber === userNumber)
+document.write(`Класс, вы угадали с первой попытки!!!`)
+else {
+let userNumber2 = prompt(`К сожалению Вы не угадали, попробуйте ещё раз`)
+ if(randomNumber === userNumber2)
+document.write(`Вы угадали со второй попытки!!!!`)
+else 
+document.write(`В следующий раз вам повезёт!!!`)}
+
+</script>
+         </div>
+</div>
+   </main>
+
+</body>
+
+</html>

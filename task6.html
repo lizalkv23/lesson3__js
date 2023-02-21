@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title> Lesson 3</title>
+</head>
+
+<body>
+   <main class="block">
+      <div class="block__container">
+         <div class="block__items block__items--0">
+<script>
+   //7.	З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+  //Вводим необходимые данные
+const timeOfYear= parseInt(prompt(`Укажите число от 1 до 12 \n И мы узнаем какая пора года относится к этому месяцу`, ''))
+  //Находим результат  
+  let result
+switch (timeOfYear){
+ case 1:
+ case 2 : result = `Зима`;
+ break;
+ case 3 :
+ case 4 :
+ case 5 : result = `Весна`;
+ break;
+ case 6 :
+ case 7 :
+ case 8 : result = `Лето`;
+ break;
+ case 9 :
+ case 10 :
+ case 11: result = `Осень`;
+ break;
+ case 12: result = `Зима`;
+ break;
+ default : result = `Пересмотрите внимательно условия задания и попробуйте ещё раз`
+}
+   // Выводим результат
+document.write(result)
+</script>
+         </div>
+</div>
+   </main>
+
+</body>
+
+</html>

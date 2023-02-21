@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title> Lesson 3</title>
+</head>
+
+<body>
+   <main class="block">
+      <div class="block__container">
+         <div class="block__items block__items--0">
+<script>
+   //5.	З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+  //Вводим необходимые данные
+const userCategory = prompt(`Укажите вашу категорию "А" "В" "С"`, '')
+  //Находим результат  
+  let result
+switch (userCategory){ 
+ case 'A':
+ case 'a': result = `Мотоцикл - это то что вам нужно!!!`
+ break;
+ case 'B':
+ case 'b': result = `Машина, скорость, ветер...`
+ break;
+ case 'C':
+ case 'c': result = `Тебе нужно что-то по мощнее, грузовик- это твоё!!`
+ break;
+ default : result = `Пересмотрите внимательно условия задания и попробуйте ещё раз`
+}
+   // Выводим результат
+   document.write(result)
+</script>
+         </div>
+</div>
+   </main>
+
+</body>
+
+</html>

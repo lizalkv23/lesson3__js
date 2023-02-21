@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title> Lesson 3</title>
+</head>
+
+<body>
+   <main class="block">
+      <div class="block__container">
+         <div class="block__items block__items--0">
+<script>
+  //4.	З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+  //Вводим необходимые данные
+  const kid = 3,
+  schoolChild = 7,
+  student = 17,
+  worker = 24,
+  senior = 60
+  //Находим результат  
+const userAge = parseInt(prompt(`Укажите ваш возраст`, ''))
+let result
+if (userAge< kid)
+result = `Готовся малыш, скоро в садик!!`
+else if (userAge< schoolChild)
+result = `Класс, ты уже ходишь в садик`
+else if (userAge < student)
+result = `Ты уже ходишь в школу!`
+else if (userAge < worker)
+result = `Будем грызть гранит науки, студент?`
+else if (userAge < senior)
+result = `Учеба позади, теперь пора и поработать`
+else if (userAge > senior)
+result = `Сколько можно работать, пора и отдохнуть)`
+else
+result = `Введите пожалуйста корректные данные`
+   // Выводим результат
+document.write(result)
+</script>
+         </div>
+</div>
+   </main>
+
+</body>
+
+</html>

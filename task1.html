@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title> Lesson 3</title>
+</head>
+
+<body>
+   <main class="block">
+      <div class="block__container">
+         <div class="block__items block__items--0">
+<script>
+  //2.	З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+  //Вводим необходимые данные
+  const priceProduct = parseFloat(prompt(`Цена товара`, ""))
+  const quantityOfMoney = parseFloat(prompt(`Количество доступных финансов`, ""))
+  const lotteryPrice = 4
+  const moneyAfterPurchase = quantityOfMoney - priceProduct
+  let result
+  //Находим результат  
+  if (priceProduct <= quantityOfMoney && moneyAfterPurchase < lotteryPrice)
+result = `Спасибо за покупку.`
+else  if(moneyAfterPurchase >= lotteryPrice)
+result = `Спасибо за покупку. Можете купить ещё лотерею. Сегодня вам точно повезёт!`
+else if (priceProduct > quantityOfMoney)
+result = `К сожалению у вас не хватает денег.`
+else 
+result = `Некорректно введены данные, попробуйте ещё раз.`
+ // Выводим результат
+document.write(result)
+</script>
+         </div>
+</div>
+   </main>
+
+</body>
+
+</html>
